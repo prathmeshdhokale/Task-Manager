@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Task Manager</h1>
+    <p class="sub">Add tasks and drag them between columns.</p>
+
+    <form id="taskForm">
+      <input type="text" id="taskInput" placeholder="New task" maxlength="80" required>
+      <button type="submit">Add task</button>
+    </form>
+
+    <div class="board">
+      <section class="column" data-status="todo">
+        <h2>To Do</h2>
+        <div class="list" id="todo"></div>
+      </section>
+
+      <section class="column" data-status="doing">
+        <h2>In Progress</h2>
+        <div class="list" id="doing"></div>
+      </section>
+
+      <section class="column" data-status="done">
+        <h2>Done</h2>
+        <div class="list" id="done"></div>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
